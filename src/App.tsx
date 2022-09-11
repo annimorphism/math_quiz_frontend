@@ -51,7 +51,7 @@ function App() {
 	}, [leaderboard, username]);
 
 	useEffect(() => {
-		let ws = new WebSocket("ws://math-quiz-backend.herokuapp.com/ws");
+		let ws = new WebSocket("wss://math-quiz-backend.herokuapp.com/ws");
 		// Store the websocket connection in state
 		ws.onopen = () => {
 			setConnected(true);
