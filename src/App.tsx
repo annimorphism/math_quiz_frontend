@@ -59,7 +59,7 @@ function App() {
 
 
   useEffect(() => {
-    let ws = new WebSocket('ws://43.205.1.154:5000/ws');
+    let ws = new WebSocket('wss://math-quiz-backend.herokuapp.com/ws');
     // Store the websocket connection in state
     ws.onopen = () => {
       setConnected(true)
